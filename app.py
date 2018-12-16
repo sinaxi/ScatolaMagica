@@ -54,7 +54,7 @@ def date_Intent(date):
     story_found = False
     db = Database()
     res = db.list_info()
-    story = 'Spiecente non ho trovato nessuna fiaba'
+    story = 'Spiacente non ho trovato nessuna fiaba'
     for entry in res:
         tstr = str(entry['publishdate'])
         tstr = tstr[:10] 
@@ -75,7 +75,7 @@ def number_Intent(number):
     db = Database()
     res = db.list_info()
     dat = date.today() - timedelta(days = int(number))
-    story = 'Spiecente non ho trovato nessuna fiaba'
+    story = 'Spiacente non ho trovato nessuna fiaba'
     for entry in res:
         tstr = str(entry['publishdate'])
         tstr = tstr[:10] 
@@ -95,7 +95,7 @@ def search_Intent(keyword):
     story_found = False
     db = Database()
     res = db.list_info()
-    story = 'Spiecente non ho trovato nessuna fiaba'
+    story = 'Spiacente non ho trovato nessuna fiaba'
     tstr = ""
     for entry in res:
         tstr = entry['title']
